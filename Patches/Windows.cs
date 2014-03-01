@@ -21,10 +21,11 @@ namespace Connection_Patcher.Patches
     {
         public static class x86
         {
-            public static byte[] Send  = { 0x33, 0xC0, 0x90 };
-            public static byte[] Email = { 0xEB };
-            public static byte[] User  = { 0x00 };
-            public static byte[] RaF   = { 0x90, 0x90, 0x90, 0x90, 0x90 };
+            public static byte[] Send  =    { 0x33, 0xC0, 0x90 };
+            public static byte[] Email =    { 0xEB };
+            public static byte[] User  =    { 0x00 };
+            public static byte[] RaF =      { 0x90, 0x90, 0x90, 0x90, 0x90 };
+            public static byte[] Rcv =      { 0x74 };
         }
 
         public static class x64
